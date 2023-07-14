@@ -74,7 +74,7 @@ data/
 python ./preprocessing/preprocessing_NN.py --root ./data/ 
 
 ````
-The output will be in data folder with the fowllowing structure :  
+The output will be in data folder with the following structure :  
 
 ````
 data/
