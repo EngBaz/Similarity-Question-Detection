@@ -25,7 +25,7 @@ conda activate <environment-name>
 conda install --file requirements.txt
 
  ```` 
-#### Other (colab) : 
+#### Colab : 
 
 ````
 !pip install transformers, nltk, tokenizers, spacy, fuzzywuzzy, distance, python-levenshtein, prettytable
