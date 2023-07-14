@@ -1,4 +1,4 @@
-# Quora question pair similarity
+# Quora Question Pair Similarity
 
 
 Our implementation is based on Python and is inspired by the following articles:
@@ -6,13 +6,13 @@ Our implementation is based on Python and is inspired by the following articles:
 - https://arxiv.org/pdf/1907.01041.pdf
 - https://aclanthology.org/P19-1465/
 
-and these githubs repositories: 
+and these Github repositories: 
 - https://github.com/YuriyGuts/kaggle-quora-question-pairs
 
 ## Details of the used approach:
 Our approach involves preprocessing the question pairs, extracting features, developing a BERT-based model for similarity prediction as well as a classical machine learning model, evaluating its performance using metrics, and iteratively improving the model based on error analysis. More details in the report joined to this repository.
 
-## Installing dependencies:
+## Installing Dependencies:
 
 #### Conda envs : 
 
@@ -40,7 +40,7 @@ To use our implementation, follow these steps:
 ### Data Exploration:
 To discover the dataset, simply run the notebook ./notebooks/Exploratory Data Analysis.ipynb. 
 ### Preprocessing 
-Preprocess the raw question pairs by running the preprocessing code. This will transform the questions into a suitable format for feature extraction and model training. make sure your ./data folder looks like this : 
+Preprocess the raw question pairs by running the preprocessing code. This will transform the questions into a suitable format for feature extraction and model training. Make sure your ./data folder looks like this : 
 
 ````
 data/
@@ -48,7 +48,7 @@ data/
 └── test.csv
  ````
 
-##### Preprocessing for Classical ML models 
+##### Preprocessing for Classical ML Models 
 
 ````
 #Use the flag `-g` to indicate to the script 
@@ -58,7 +58,7 @@ data/
 python ./preprocessing/preprocessing_ML.py --root ./data/ -g
 python ./preprocessing/preprocessing_ML.py --root ./data/
 ````
-The output will be in data folder with the fowllowing structure : 
+The output will be in data folder with the following structure : 
 
 ````
 data/
@@ -89,22 +89,22 @@ data/
 Train the model by executing the training code. This will train the model using the preprocessed data and the defined model architecture. 
 
 #### Train BertModel : 
-to train the model that use BERT embeddings, run the following :
+To train the model that use BERT embeddings, run the following :
 
 ````
 python train.py --config ./configs/config.ini
 ````
 
-the configs folder containes files of configs where you can set hyperparameters and paths to data ...
+the configs folder contains files of configs where you can set hyperparameters and paths to data ...
 
-#### Train classical ML models : 
+#### Train Classical ML Models : 
 To train classical ML models, simply run the notebook ./notebooks/ML_models.ipynb. 
-Make sure you have already run preprocessing for ML models. 
+Make sure you have already ran preprocessing for ML models. 
 
 
 
 ### How to test ?
-Test the trained model on new question pairs by running the testing code. This will provide predictions on the similarity of the question pairs based on the trained model. to evaluate the trained models, edit the config file in ./configs (example : ./configs/bert_test_config.ini) than run the following command : 
+Test the trained model on new question pairs by running the testing code. This will provide predictions on the similarity of the question pairs based on the trained model. To evaluate the trained models, edit the config file in ./configs (example : ./configs/bert_test_config.ini) than run the following command : 
  ````
  python eval.py --configs ./configs/bert_test_config.ini --model bert
 
