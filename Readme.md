@@ -26,7 +26,6 @@ conda install --file requirements.txt
 
  ```` 
 #### Other (colab) : 
-Using pip commands 
 
 ````
 !pip install transformers, nltk, tokenizers, spacy, fuzzywuzzy, distance, python-levenshtein, prettytable
