@@ -94,7 +94,7 @@ To train the model that use BERT embeddings, run the following :
 python train.py --config ./configs/config.ini
 ````
 
-the configs folder contains files of configs where you can set hyperparameters and paths to data ...
+The configs folder contains files of configs where you can set hyperparameters and paths to data ...
 
 #### Train Classical ML Models : 
 To train classical ML models, simply run the notebook ./notebooks/ML_models.ipynb. 
