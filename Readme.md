@@ -103,7 +103,7 @@ Make sure you have already ran preprocessing for ML models.
 
 
 ### How to test ?
-Test the trained model on new question pairs by running the testing code. This will provide predictions on the similarity of the question pairs based on the trained model. To evaluate the trained models, edit the config file in ./configs (example : ./configs/bert_test_config.ini) than run the following command : 
+Test the trained model on new question pairs by running the testing code. This will provide predictions on the similarity of the question pairs based on the trained model. To evaluate the trained models, edit the config file in ./configs (example : ./configs/bert_test_config.ini) then run the following command : 
  ````
  python eval.py --configs ./configs/bert_test_config.ini --model bert
 
