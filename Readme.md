@@ -5,6 +5,7 @@ Our implementation is based on Python and is inspired by the following articles:
 
 - https://arxiv.org/pdf/1907.01041.pdf
 - https://aclanthology.org/P19-1465/
+- https://arxiv.org/abs/1810.04805
 
 and these Github repositories: 
 - https://github.com/YuriyGuts/kaggle-quora-question-pairs
