@@ -119,10 +119,6 @@ Our approach achieves promising results in the task of quora question pair simil
 | Linear SVM | TF-IDF w2v  | 0.38734 |  0.39245  |
 | Logistic Regression | -- | 0.38432 |  0.39038 |
 
-## Contributors :
-  - DJECTA Hibat_Errahmen
-  - BENCHEIKH LEHOCINE Mohammed Amine
-  - BAZ Roland
 
 
   
